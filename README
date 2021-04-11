@@ -1,0 +1,10 @@
+Installation:
+	git clone git://github.com/somthing/dotvim.git ~/.vim
+
+Create symlink:
+	ln -s ~/.vim/vimrc ~/.vimrc
+
+Switch to the '~/.vim' drectory, and fetch submodules:
+	cd ~/.vim
+	git submodule init
+	git submodule update
