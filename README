@@ -1,5 +1,5 @@
 Installation:
-	git clone git://github.com/somthing/dotvim.git ~/.vim
+	git clone https://github.com/DanielGreth/dotvim.git ~/.vim
 
 Create symlink:
 	ln -s ~/.vim/vimrc ~/.vimrc
