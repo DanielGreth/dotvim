@@ -47,4 +47,39 @@ set showmatch
 " Highlight current line
 set cursorline
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => lightline
+" https://github.com/itchyny/lightline.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2                " Actually adds / shows lightline at the bottom
+set noshowmode                  " Remove unnecessary  --INSERT-- at the bottom
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ], 
+      \              [ 'percent' ],
+      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ 'separator': { 'left': ' ', 'right': ' ' },
+      \ 'subseparator': { 'left': ' ', 'right': ' ' }
+      \ }
+
+
+
+
+
+
+
+
 
